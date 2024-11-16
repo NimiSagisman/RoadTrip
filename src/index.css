@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global grayscale filter */
+img, video {
+  filter: grayscale(100%);
+}
+
+/* Ensure SVG icons are also grayscale */
+svg {
+  filter: grayscale(100%);
+}
+
+/* Custom grayscale utility classes */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Ensure proper contrast for text */
+.text-primary {
+  @apply text-gray-900;
+}
+
+.text-secondary {
+  @apply text-gray-600;
+}
+
+.text-tertiary {
+  @apply text-gray-400;
+}
